@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Shop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light flex-column">
+        <div class="container-fluid px-5 justify-content-between">
+
+            <!-- BRAND -->
+            <a class="navbar-brand fw-bold fs-2" href="#">
+                BOOTIN
+            </a>
+
+            <!-- BRAND -->
+            <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../post/post.html">Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- BADGES -->
+            <div class="d-flex gap-3  align-items-center badges">
+
+                <div class="position-relative d-inline-block pe-3 border-end">
+                    <i class="bi bi-heart fs-4"></i>
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark">
+                        3
+                    </span>
+                </div>
+
+                <div class="position-relative d-inline-block pe-3 border-end">
+                    <i class="bi bi-bookmark fs-4"></i>
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark">
+                        0
+                    </span>
+                </div>
+
+                <i class="bi bi-person-fill fs-4"></i>
+
+            </div>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card text-bg-dark border-0">
+                        <img src="../assets/bg.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay align-items-center d-flex justify-content-center">
+                            <h1 class="card-title">Shop</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- SIDEBAR -->
+      <aside class="col-12 col-md-6  col-lg-3 pe-lg-5 order-2 order-lg-1">
+
+        <!-- SEARCH -->
+        <form class="d-none d-md-block mb-4">
+          <div class="input-group input-group-lg border-bottom">
+            <input
+              type="text"
+              class="form-control bg-transparent border-0"
+              placeholder="Search Book..."
+            >
+            <span class="input-group-text bg-transparent border-0">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+        </form>
+
+        <!-- CATEGORY -->
+        <div class="mb-4">
+          <h2>Categorie</h2>
+          <hr class="w-25">
+          <ul class="list-unstyled">
+            <li>Business (3)</li>
+            <li>Classic (7)</li>
+            <li>Drama (2)</li>
+            <li>For Kid (13)</li>
+            <li>Horror (16)</li>
+            <li>Loved (1)</li>
+          </ul>
+        </div>
+
+        <!-- PRICE -->
+        <div class="mb-4">
+          <h2>Price</h2>
+          <hr class="w-25">
+          <input type="range" class="w-100">
+          <div class="d-flex justify-content-between">
+            <p>2 400 F CFA</p>
+            <p>23 400 F CFA</p>
+          </div>
+        </div>
+
+        <!-- AUTHOR -->
+        <div class="mb-4">
+          <h2>Author</h2>
+          <hr class="w-25">
+          <div class="d-flex flex-column gap-1">
+            <label><input type="checkbox"> Anna Hilton (3)</label>
+            <label><input type="checkbox"> Anna Hiltons (4)</label>
+            <label><input type="checkbox"> Coco Simon (2)</label>
+            <label><input type="checkbox"> Nicolas Sumpir (3)</label>
+            <label><input type="checkbox"> Sabela Hupter (7)</label>
+            <label><input type="checkbox"> Susan Merrlin (4)</label>
+          </div>
+        </div>
+
+        <!-- TAGS -->
+        <div>
+          <h2>Tags</h2>
+          <hr class="w-25">
+          <div class="d-flex flex-wrap gap-2">
+            <div class="border border-2 px-3 py-1">Classic</div>
+            <div class="border border-2 px-3 py-1">Drama</div>
+            <div class="border border-2 px-3 py-1">Business</div>
+            <div class="border border-2 px-3 py-1">Horror</div>
+            <div class="border border-2 px-3 py-1">Kids</div>
+            <div class="border border-2 px-3 py-1">Woman</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- PRODUCTS -->
+      <main class="col-12 col-lg-9 order-1 order-lg-2">
+        <div class="row g-3">
+
+          <!-- PRODUCT CARD -->
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/liv1.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+
+         <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/liv2.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/liv3.webp" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/livre1.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/livre2.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/livre3.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/livre4.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/livre5.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/livre6.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/spec1.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/spec2.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6  col-lg-3">
+            <div class="bg-light text-center py-3 h-100">
+              <img src="/assets/spec3.png" class="w-50" alt="">
+              <p class="fw-bold m-0">The Book Mart</p>
+              <p class="m-0">Classic Literature</p>
+              <p>19 400 F CFA</p>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-9 offset-lg-3 d-none d-md-block">
+            <hr>
+          </div>
+
+          <!-- PAGINATION -->
+          <div class="col-12 d-flex justify-content-center gap-2 mt-3">
+            <div class="border border-2 px-3 py-2">1</div>
+            <div class="border border-2 px-3 py-2">2</div>
+            <div class="border border-2 px-3 py-2">3</div>
+          </div>
+</section>
+
+
+    <footer class="mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4>Contact us</h4>
+                    <div>
+                        <div class="d-flex">
+                            <div><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <p class="m-0">1998 Wall Street 707,</p>
+                                <p>Washigton DC, USA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <p class="m-0">1998 Wall Street 707,</p>
+                                <p>Washigton DC, USA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div><i class="bi bi-telephone-fill"></i></div>
+                            <div>
+                                <p class="m-0">1998 Wall Street 707,</p>
+                                <p>Washigton DC, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h4>Informations</h4>
+                    <div class="d-flex flex-column justify-content-between">
+                        <a href="#" class="text-decoration-none text-black">Contact Us</a>
+                        <a href="#" class="text-decoration-none text-black">Site Map</a>
+                        <a href="#" class="text-decoration-none text-black">Privacy Policy</a>
+                        <a href="#" class="text-decoration-none text-black">About Us</a>
+                        <a href="#" class="text-decoration-none text-black">Costumer Service</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h4>My Card</h4>
+                    <div class="d-flex flex-column justify-content-between">
+                        <a href="#" class="text-decoration-none text-black">Sign In</a>
+                        <a href="#" class="text-decoration-none text-black">View Cart</a>
+                        <a href="#" class="text-decoration-none text-black">My Wishlist</a>
+                        <a href="#" class="text-decoration-none text-black">Track My Order</a>
+                        <a href="#" class="text-decoration-none text-black">Help</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4>Instagram</h4>
+                    <div class="d-flex">
+                        <div>
+                            <img src="/assets/ins1.png" alt="img" class="w-75">
+                        </div>
+                        <div>
+                            <img src="/assets/ins2.png" alt="img" class="w-75">
+                        </div>
+                        <div>
+                            <img src="/assets/ins3.png" alt="img" class="w-75">
+                        </div>
+                    </div>
+                    <div>
+                        <p>7 Days A Week Form 8:00 Am TO 5 Pm</p>
+                        <div>
+                            <i class="bi bi-facebook fs-2"></i>
+                            <i class="bi bi-twitter fs-2"></i>
+                            <i class="bi bi-instagram fs-2"></i>
+                            <i class="bi bi-pinterest fs-2"></i>
+                            <i class="bi bi-linkedin fs-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
