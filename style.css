@@ -20,4 +20,11 @@
 
 .scale-hover1:hover {
     transform: scale(1.05);
+    background: white !important;
+    color: rgb(249, 127, 147);
+}
+
+.scale-hover1:hover .icon{
+color: white !important;
+background: rgb(249, 127, 147) !important;
 }
